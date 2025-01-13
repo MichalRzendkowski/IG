@@ -23,7 +23,7 @@ Niedawno organizowałaś/eś wyjazd z przyjaciółmi do Pragi, gdzie razem wynaj
 Tomek zapłacił za wynajem, a chcecie się podzielić kosztem po równo ‒ z tym, że Paweł chce zapłacić też za swoją dziewczynę Julkę. 
 Chcesz zapisać ten wydatek w odpowiednim rachunku, żeby w przyszłości się łatwo rozliczyć.
 
-## Scenariusz 3
+### Scenariusz 3
 Prowadzisz w aplikacji rachunek ze współlokatorem, żeby śledzić wasze wydatki na mieszkanie. 
 Wczoraj dostałaś/eś wypłatę, więc chcesz oddać współlokatorowi tyle, ile mu wisisz. 
 A więc: 
