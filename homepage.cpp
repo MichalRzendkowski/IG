@@ -4,6 +4,8 @@
 #include <QPushButton>
 #include <QGridLayout>
 
+
+
 HomePage::HomePage(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::HomePage)
@@ -11,6 +13,9 @@ HomePage::HomePage(QWidget *parent)
     ui->setupUi(this);
 
     QWidget *widgetNowyRachunek = ui->widgetNowyRachunek;
+
+    QPushButton* przycisk = ui->buttonRachunek3;
+    przycisk->setVisible(false);
 
     widgetNowyRachunek->setVisible(false);
 
@@ -26,13 +31,16 @@ HomePage::HomePage(QWidget *parent)
         widgetNowyRachunek->setVisible(false);
     });
 
-    connect(ui->buttonUtworz, &QPushButton::clicked, [widgetNowyRachunek]() {
+    connect(ui->buttonUtworz, &QPushButton::clicked, [widgetNowyRachunek, przycisk]() {
         widgetNowyRachunek->setVisible(false);
+        przycisk->setVisible(true);
     });
 
-    connect(ui->buttonRachunek1, &QPushButton::clicked, this, &HomePage::rachunekOpen);
+    connect(ui->buttonRachunek3, &QPushButton::clicked, this, &HomePage::rachunekOpen);
 
-    connect(ui->buttonRachunek2, &QPushButton::clicked, this, &HomePage::rachunekOpen);
+    // connect(ui->buttonRachunek1, &QPushButton::clicked, this, &HomePage::rachunekOpen);
+
+    // connect(ui->buttonRachunek2, &QPushButton::clicked, this, &HomePage::rachunekOpen);
 }
 
 HomePage::~HomePage(){}

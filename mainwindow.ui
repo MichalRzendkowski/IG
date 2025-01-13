@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>450</width>
-    <height>800</height>
+    <width>473</width>
+    <height>768</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -25,14 +25,19 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-color: rgb(45, 45, 45);
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>-1</y>
+      <y>9</y>
       <width>451</width>
-      <height>731</height>
+      <height>721</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -47,8 +52,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>450</width>
-     <height>37</height>
+     <width>473</width>
+     <height>25</height>
     </rect>
    </property>
   </widget>
