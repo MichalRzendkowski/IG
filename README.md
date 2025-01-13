@@ -1,7 +1,8 @@
 # KtoKomuIle
 Aplikacja ułatwiająca notowanie wspólnych wydatków i ułatwiająca rozliczanie się z innymi.
 ## Jak uruchomić
-Pobierz plik wykonywalny .exe (tutaj) i uruchom go.
+Pobierz plik zip z tej strony: https://mega.nz/folder/rq4TDSiR#SjVaQ-jdConnTxxujufR6g
+Następnie rozpakuj folder i uruchom Prototyp.exe
 ## Scenariusze do testowania
 Poniżej przedstawiamy 3 scenariusze przeznaczone do testowania interfejsu aplikacji. UWAGA: w obecnej wersji aplikacja obsługuje tylko poniższe trzy scenariusze.
 
