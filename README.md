@@ -17,8 +17,8 @@ W związku z tym:
 ### Scenariusz 2
 Wczoraj byłeś w barze z Andrzejem i Pauliną. Andrzej zapłacił za wszystkich i teraz chcielibyście dodać wydatek do aplikacji.
 Dodaj do rachunku "Bar" nowy wydatek:
-    - kwota: 213 zł
-    - dzilicie się po równo
+1. kwota: 213 zł
+2. dzilicie się po równo
 
 ### Scenariusz 3
 Chcaiłbyś oddać Andrzejowi pieniądze które jesteś mu winny i zapisać tranzakcję w aplikacji.
