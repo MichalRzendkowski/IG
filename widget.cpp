@@ -1,11 +1,10 @@
 #include "widget.h"
 #include <QLabel>
 
-Widget::Widget(QString userName, float amount, QWidget *parent, QFont font)
-    : QWidget(parent), userName(userName), amount(amount), font(font)
+Widget::Widget(QString userName, float amount, QWidget *parent)
+    : QWidget(parent), userName(userName), amount(amount)
 {
     this->layout = new QHBoxLayout();
-    // this->layout->setAlignment(Qt::AlignLeft);
     this->setLayout(layout);
     QPalette pal = QPalette();
     pal.setColor(QPalette::Window, Qt::black);
