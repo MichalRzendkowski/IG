@@ -15,14 +15,14 @@ Rachunek::Rachunek(QWidget *parent)
 {
     ui->setupUi(this);
 
-    wydatki.append(new WidgetWydatki("Adam", 10, QFont("Tahoma", 20), "Zakupy", QDate(2015, 12, 05)));
-    wydatki.append(new WidgetWydatki("Kasia", 20, QFont("Tahoma", 20), "Bar", QDate(2015, 11, 01)));
+    wydatki.append(new WidgetWydatki("Adam", 10, "Zakupy", QDate(2015, 12, 05)));
+    wydatki.append(new WidgetWydatki("Kasia", 20, "Bar", QDate(2015, 11, 01)));
 
     czlonkowie.append(new WidgetCzlonkowie("Adam", -15));
     czlonkowie.append(new WidgetCzlonkowie("Kasia", 15));
 
-    rozliczenia.append(new WidgetRozliczenia("Kasia", 2, QFont("Tahoma", 20), "Adam", false));
-    rozliczenia.append(new WidgetRozliczenia("Adam", 15, QFont("Tahoma", 20), "Kasia", true));
+    rozliczenia.append(new WidgetRozliczenia("Kasia", 2, "Adam", false));
+    rozliczenia.append(new WidgetRozliczenia("Adam", 15, "Kasia", true));
 
     setWidgets();
     setButtons();

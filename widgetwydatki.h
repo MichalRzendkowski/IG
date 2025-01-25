@@ -7,7 +7,7 @@
 class WidgetWydatki: public Widget
 {
 public:
-    WidgetWydatki(QString userName, float amount = 0, QFont font = QFont("Tahoma", 20), QString title = NULL, QDate date = QDate(), QWidget *parent = nullptr);
+    WidgetWydatki(QString userName, float amount = 0, QString title = NULL, QDate date = QDate(), QWidget *parent = nullptr);
     void setTitle(QString title);
     void setDate(QDate date);
 

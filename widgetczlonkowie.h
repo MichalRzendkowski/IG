@@ -6,7 +6,7 @@
 class WidgetCzlonkowie : public Widget
 {
 public:
-    WidgetCzlonkowie(QString userName, float amount = 0, QWidget *parent = nullptr, QFont font = QFont("Tahoma", 20));
+    WidgetCzlonkowie(QString userName, float amount = 0, QWidget *parent = nullptr);
     void setBalance(float amount);
 };
 
