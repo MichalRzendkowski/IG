@@ -8,6 +8,7 @@ class WidgetCzlonkowie : public Widget
 public:
     WidgetCzlonkowie(QString userName, float amount = 0, QWidget *parent = nullptr);
     void setBalance(float amount);
+    QString getName();
 };
 
 #endif // WIDGETCZLONKOWIE_H

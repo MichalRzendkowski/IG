@@ -17,3 +17,7 @@ void WidgetRozliczenia::setRozliczony(bool rozliczony){
     this->rozliczony = rozliczony;
 
 }
+
+bool WidgetRozliczenia::getRozliczony(){
+    return rozliczony;
+}

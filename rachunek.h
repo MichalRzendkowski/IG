@@ -3,6 +3,9 @@
 
 #include <QWidget>
 #include "widget.h"
+#include "widgetwydatki.h"
+#include "widgetczlonkowie.h"
+#include "widgetrozliczenia.h"
 #include <QGridLayout>
 
 QT_BEGIN_NAMESPACE
@@ -14,7 +17,8 @@ class Rachunek : public QWidget
     Q_OBJECT
 
 public:
-    explicit Rachunek(QWidget *parent = nullptr);
+    explicit Rachunek(QString name, QWidget *parent = nullptr);
+    QString getName();
     ~Rachunek();
 
 signals:
@@ -26,12 +30,13 @@ private:
     void setWydatki();
     void updateWidgets();
     Ui::Rachunek *ui;
-    QList<Widget*> wydatki = QList<Widget*>();
-    QList<Widget*> czlonkowie = QList<Widget*>();
-    QList<Widget*> rozliczenia = QList<Widget*>();
+    QList<WidgetWydatki*> wydatki = QList<WidgetWydatki*>();
+    QList<WidgetCzlonkowie*> czlonkowie = QList<WidgetCzlonkowie*>();
+    QList<WidgetRozliczenia*> rozliczenia = QList<WidgetRozliczenia*>();
     QWidget *widgetNowyWydatek;
     QWidget *widgetNowyCzlonek;
     QWidget *widgetRozlicz;
+    QString name;
 };
 
 #endif // RACHUNEK_H
