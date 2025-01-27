@@ -6,6 +6,7 @@
 
 class WidgetRozliczenia: public Widget
 {
+    Q_OBJECT
 public:
     WidgetRozliczenia(QString userName, float amount = 0, QString userName2 = NULL, bool rozliczony = false, QWidget *parent = nullptr);
     void setUserName2(QString title);

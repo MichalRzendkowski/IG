@@ -7,9 +7,19 @@ WidgetCzlonkowie::WidgetCzlonkowie(QString userName, float amount, QWidget *pare
     QLabel *l1 = new QLabel(userName);
     //l1->setFont(FONT);
     layout->addWidget(new QLabel(userName));
-    layout->addWidget(new QLabel("Balans " + QString(amount > 0 ? "+" : "") + QString::number(amount)));
+    labelBalans = new QLabel("Balans " + QString(amount > 0 ? "+" : "") + QString::number(amount));
+    layout->addWidget(labelBalans);
 }
 
 QString WidgetCzlonkowie::getName(){
     return userName;
+}
+
+float WidgetCzlonkowie::getBalance(){
+    return amount;
+}
+
+void WidgetCzlonkowie::setBalance(float amount){
+    this->amount = amount;
+    labelBalans->setText("Balans " + QString(amount > 0 ? "+" : "") + QString::number(amount));
 }

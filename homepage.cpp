@@ -40,6 +40,12 @@ HomePage::HomePage(QWidget *parent)
             return;
         }
 
+        if(rachunki.length() == 6){
+            msgBox.setText("Osiągnięto maksymalną liczbę rachunków");
+            msgBox.exec();
+            return;
+        }
+
         this->rachunki.append(new WidgetRachunek(new Rachunek(this->ui->lineEditNazwa->text())));
         updateRachunki();
         widgetNowyRachunek->setVisible(false);

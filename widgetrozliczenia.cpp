@@ -10,12 +10,13 @@ WidgetRozliczenia::WidgetRozliczenia(QString userName, float amount, QString use
     layout->addWidget(new QLabel(QString::number(amount) + " PLN"));
 }
 
+
+
 void WidgetRozliczenia::setUserName2(QString userName2){
     this->userName2 = userName2;
 }
 void WidgetRozliczenia::setRozliczony(bool rozliczony){
     this->rozliczony = rozliczony;
-
 }
 
 bool WidgetRozliczenia::getRozliczony(){

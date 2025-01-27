@@ -6,7 +6,7 @@ WidgetWydatki::WidgetWydatki(QString userName, float amount, QString title, QDat
     layout->addWidget(new QLabel(title, this), 1);
     layout->addWidget(new QLabel(QString::number(amount) + "PLN", this), 1);
     layout->addWidget(new QLabel(userName, this), 1);
-    layout->addWidget(new QLabel(date.toString(), this), 1);
+    layout->addWidget(new QLabel(date.toString("yyyy.MM.dd"), this), 1);
 }
 
 void WidgetWydatki::setTitle(QString title){
